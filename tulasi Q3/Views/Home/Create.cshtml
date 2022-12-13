@@ -1,0 +1,32 @@
+﻿
+
+@{ ViewBag.Title = "Create";
+}
+
+
+<h1>Foot Ball League</h1></br>
+<h2>Add Match Results</h2></br>
+@using (Html.BeginForm("CreateAccount", "Home", FormMethod.Post))
+    @model tulasi_Q3.Controllers.
+<p>
+    @Html.ValidationMessageFor(a => a.MatchID)<br />    @Html.ValidationMessageFor(a => a.TeamName1)<br />    @Html.ValidationMessageFor(a => a.TeamName2)<br />    @Html.ValidationMessageFor(a => a.status)<br />    @Html.ValidationMessageFor(a => a.points)<br />
+
+
+</p>
+
+
+<p> Match ID :@Html.TextBoxFor(a => a.MatchID)    </p>
+<p>
+    Team Name 1:@Html.TextBoxFor(a => a.TeamName1)
+</p>
+<p>
+    Team Name 2:@Html.TextBoxFor(a => a.TeamName2)
+</p>
+<p>
+    status :@Html.TextBoxFor(a => a.status)
+</p>
+<p>
+    Points : @Html.TextBoxFor(a => a.points)
+</p>
+
+
